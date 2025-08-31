@@ -80,7 +80,7 @@ open index.html
 
 **Atharva Sharma**
 
-* 📧 Email: [@my_mail]([2431560atharva@gmail.com](https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new))
+* 📧 Email: [@my_mail]((https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new))
 * 🐈‍⬛ Github: [@my_Github](https://github.com/atharva-dev1)
 * 💼 LinkedIn: [my_LinkedIn](https://linkedin.com/in/atharvasharma2161)
 
