@@ -2,7 +2,7 @@
 
 A **clean, modern, and fully responsive personal portfolio website** built from scratch using **HTML5** and **CSS3**. This project showcases my skills, work experience, and projects, and provides an easy way for visitors to get in touch or download my resume.
 
-🔗 **Live Demo**: [your-portfolio-link.com](https://your-portfolio-link.com) *(Replace with your actual live URL)*
+🔗 **Live Demo**: [my-portfolio.com](https://atharva-dev1.github.io/Portfolio/) *(Replace with your actual live URL)*
 
 ---
 
