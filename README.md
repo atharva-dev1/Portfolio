@@ -80,9 +80,9 @@ open index.html
 
 **Atharva Sharma**
 
-* 📧 Email: [your.email@example.com](2431560atharva@gmail.com)
-* 🐈‍⬛ Github: [@YourGithub](https://github.com/atharva-dev1)
-* 💼 LinkedIn: [Your LinkedIn](https://linkedin.com/in/atharvasharma2161)
+* 📧 Email: [2431560atharva@gmail.com](2431560atharva@gmail.com)
+* 🐈‍⬛ Github: [@my_Github](https://github.com/atharva-dev1)
+* 💼 LinkedIn: [my_LinkedIn](https://linkedin.com/in/atharvasharma2161)
 
 📂 **Project Repository**: [GitHub Repo](https://github.com/atharva-dev1/Porfolio)
 
