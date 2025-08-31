@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Sharma- Front-End Developer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins for a modern feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">AS.</a>
+            <ul class="hidden md:flex space-x-8 items-center">
+                <li><a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a></li>
+                <li><a href="#services" class="text-gray-600 hover:text-blue-600 transition duration-300">Services</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-blue-600 transition duration-300">Projects</a></li>
+                <li><a href="#resume" class="text-gray-600 hover:text-blue-600 transition duration-300">Resume</a></li>
+                <li><a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition duration-300">Contact Me</a></li>
+            </ul>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+            <a href="#services" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-blue-600">Projects</a>
+            <a href="#resume" class="block py-2 text-gray-600 hover:text-blue-600">Resume</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="container mx-auto px-6 py-24 flex flex-col md:flex-row items-center text-center md:text-left overflow-hidden">
+            <div class="md:w-1/2 animate-on-scroll">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">Hi, I'm <span class="gradient-text">Atharva Sharma</span></h1>
+                <p class="text-xl text-blue-600 font-semibold mt-2">A Passionate Front-End Developer</p>
+                <p class="mt-4 text-gray-600 max-w-lg mx-auto md:mx-0">I build beautiful, responsive, and user-friendly web applications. Turning complex problems into elegant digital solutions is my specialty.</p>
+                <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                    <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300 shadow-lg cta-pulse">View My Work</a>
+                    <a href="#contact" class="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Get In Touch</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-12 md:mt-0">
+                <img src="profile_pic.jpg" alt="Portfolio placeholder image" class="rounded-full mx-auto shadow-2xl w-3/4 md:w-full max-w-sm hero-image-float">
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="bg-white py-20 overflow-hidden">
+            <div class="container mx-auto px-6 text-center animate-on-scroll">
+                <h2 class="text-3xl font-bold mb-4">About Me</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">
+                    I'm a front-end developer based in Kanpur, with a strong passion for creating interactive and dynamic user experiences. With a solid foundation in HTML, CSS, and JavaScript, I specialize in building modern web applications using frameworks like React and Vue. I'm a quick learner, a team player, and I'm always eager to take on new challenges and expand my skillset.
+                </p>
+                <div class="mt-12">
+                    <h3 class="text-2xl font-semibold mb-8">My Skills</h3>
+                    <div class="grid grid-cols-4 md:grid-cols-8 gap-y-8 gap-x-4">
+                        <!-- Skill Logos -->
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">HTML5</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">CSS3</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">JavaScript</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">React</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://img.icons8.com/?size=100&id=hsPbhkOH4FMe&format=png&color=000000" alt="Node.js Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110" style="filter: invert(1);"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">Node.js</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://img.icons8.com/?size=100&id=MWiBjkuHeMVq&format=png&color=000000" alt="Next.js Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110" style="filter: invert(1);"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">Next.js</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://www.svgrepo.com/download/354431/tailwindcss-icon.svg" alt="Tailwind CSS Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">Tailwind CSS</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">Git</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000" alt="Github Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">Github</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://img.icons8.com/?size=100&id=fpGM2cINbbu4&format=png&color=000000" alt="GCloudLogo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">Google Cloud</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">Figma</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000" alt="Canva Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">Canva</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://www.svgrepo.com/download/354522/visual-studio-code.svg" alt="VS Code Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">VS Code</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://img.icons8.com/?size=100&id=B5T4RdBJefjF&format=png&color=000000" alt="Pycharm Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">Pycharm IDE</p></div>
+                          <div class="flex flex-col items-center gap-2 group"><img src="https://img.icons8.com/?size=100&id=shQTXiDQiQVR&format=png&color=000000" alt="C Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">C Language</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://img.icons8.com/?size=100&id=TpULddJc4gTh&format=png&color=000000" alt="cpp Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">C++</p></div>
+                        <div class="flex flex-col items-center gap-2 group"><img src="https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000" alt="Python Logo" class="w-12 h-12 transition-transform duration-300 group-hover:scale-110"><p class="text-sm font-medium text-gray-500 group-hover:text-gray-800 transition-colors">Python</p></div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 animate-on-scroll">What I Offer</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Service 1: Web Development -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 text-center transition duration-300 service-card animate-on-scroll">
+                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 rounded-full mx-auto mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                        <p class="text-gray-600">Creating fully responsive and performant websites from scratch using modern technologies like React and Next.js.</p>
+                    </div>
+                    <!-- Service 2: UI/UX Design -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 text-center transition duration-300 service-card animate-on-scroll" style="animation-delay: 0.2s;">
+                        <div class="flex items-center justify-center h-16 w-16 bg-green-100 rounded-full mx-auto mb-6">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+                        <p class="text-gray-600">Designing intuitive and engaging user interfaces that provide an excellent user experience, from wireframes to final mockups.</p>
+                    </div>
+                    <!-- Service 3: Performance Optimization -->
+                    <div class="bg-white rounded-lg shadow-lg p-8 text-center transition duration-300 service-card animate-on-scroll" style="animation-delay: 0.4s;">
+                        <div class="flex items-center justify-center h-16 w-16 bg-purple-100 rounded-full mx-auto mb-6">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Performance Tuning</h3>
+                        <p class="text-gray-600">Optimizing web applications for speed and efficiency to ensure a fast, smooth, and satisfying user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white py-20 overflow-hidden">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 animate-on-scroll">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Project Cards -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 project-card animate-on-scroll"><img src="Project1.png" alt="Project 1 Screenshot" class="w-full h-56 object-cover"><div class="p-6"><h3 class="text-xl font-bold mb-2">Rapido Landing Page</h3><p class="text-gray-600 mb-4">A fully responsive e-commerce site built with React, featuring a shopping cart and product filtering.</p><a href="https://atharva-dev1.github.io/rapido/" class="text-blue-600 hover:underline font-semibold">View Demo &rarr;</a></div></div>
+
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 project-card animate-on-scroll" style="animation-delay: 0.2s;"><img src="Project2.png" alt="Project 2 Screenshot" class="w-full h-56 object-cover"><div class="p-6"><h3 class="text-xl font-bold mb-2">Virtual Piano</h3><p class="text-gray-600 mb-4">A sleek and intuitive piano built with HTML , CSS and JS for a seamless user experience.</p><a href="https://atharva-dev1.github.io/Virtual-Piano/" class="text-blue-600 hover:underline font-semibold">View Demo &rarr;</a></div></div>
+
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition duration-300 project-card animate-on-scroll" style="animation-delay: 0.4s;"><img src="Project3.png" alt="Project 3 Screenshot" class="w-full h-56 object-cover"><div class="p-6"><h3 class="text-xl font-bold mb-2">FitNimo (Website finds gym & hospitals)</h3><p class="text-gray-600 mb-4">A FitNimo site designed in Figma and built with React , Tailwind CSS , Typscirpt + Vanilla and Next.js.</p><a href="https://fitnimo.vercel.app/" class="text-blue-600 hover:underline font-semibold">View Demo &rarr;</a></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="py-20 overflow-hidden">
+    <div class="container mx-auto px-6 text-center animate-on-scroll">
+        <h2 class="text-3xl font-bold mb-4">My Resume</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto mb-8">
+            Interested in my professional background? Here you can find a detailed overview of my work experience, education, and accomplishments. Feel free to download a copy for your records.
+        </p>
+        <a href="https://drive.google.com/file/d/1KznKdZw9W8JH8YVOOfLDnJgYcqp9vUxe/view?usp=sharing" download="Atharva_CV.pdf" class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition duration-300 shadow-lg inline-flex items-center gap-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+            Download CV
+        </a>
+    </div>
+</section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white py-20 overflow-hidden">
+            <div class="container mx-auto px-6 animate-on-scroll">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-4">Let's Connect!</h2>
+                    <p class="text-gray-600 mb-8">Have a project in mind or just want to say hi? Feel free to send me a message. I'm always open to discussing new opportunities.</p>
+                    <form action="#" method="POST" class="text-left">
+                        <div class="mb-4"><label for="name" class="block text-gray-700 font-medium mb-2">Name</label><input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 transition" required></div>
+                        <div class="mb-4"><label for="email" class="block text-gray-700 font-medium mb-2">Email</label><input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 transition" required></div>
+                        <div class="mb-6"><label for="message" class="block text-gray-700 font-medium mb-2">Message</label><textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 transition" required></textarea></div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://github.com/atharva-dev1" class="hover:text-blue-400 transition">GitHub</a>
+                <a href="https://www.linkedin.com/in/atharvasharma2161/" class="hover:text-blue-400 transition">LinkedIn</a>
+                <a href="#" class="hover:text-blue-400 transition">Twitter</a>
+            </div>
+            <p>&copy; 2024 Atharva Sharma. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+    </button>
+  <script src="script.js"></script>
+</body>
+</html>

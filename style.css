@@ -1,0 +1,83 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(16, 11, 11, 0.458);
+}
+
+        /* --- Animation Keyframes --- */
+                
+        /* For revealing sections on scroll */
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* For the hero image floating effect */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* For the main CTA button pulse */
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+            50% { box-shadow: 0 0 0 15px rgba(59, 130, 246, 0); }
+        }
+        
+        /* For the gradient text animation */
+        @keyframes gradient-animation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* --- Animation Utility Classes --- */
+        
+        /* Class to apply to elements that will be animated on scroll */
+        .animate-on-scroll {
+            opacity: 0;
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        /* Class added by JavaScript when element is in view */
+        .is-visible {
+            animation: slideInUp 1s forwards;
+        }
+
+        /* Gradient text style for the main heading */
+        .gradient-text {
+            background: linear-gradient(45deg, #3B82F6, #8B5CF6, #EC4899);
+            background-size: 200% 200%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-animation 5s ease infinite;
+        }
+        
+        /* Apply animations */
+        .hero-image-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        .cta-pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        /* Enhanced project card hover effect */
+        .project-card:hover, .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Scroll to top button styles */
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+            transform: translateY(20px);
+        }
+        #scrollTopBtn.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
